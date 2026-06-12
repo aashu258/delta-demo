@@ -1,0 +1,15 @@
+<!--Success flash message ko dikhane ke liye apn ne flash.ejs me code likha hai jise apn boilerplate layout me include karenge taki apn ko har page pe flash message dikhai de-->
+<% if(success && success.length > 0){%>
+<div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
+    <%=success%>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<% } %>
+
+<!--Error flash message ko dikhane ke liye apn ne flash.ejs me code likha hai jise apn boilerplate layout me include karenge taki apn ko har page pe flash message dikhai de-->
+<% if(error && error.length > 0){%>
+<div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert">
+    <%=error%>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<% } %>
